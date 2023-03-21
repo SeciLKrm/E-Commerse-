@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    background-color: #f2f2f2;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: 10px 20px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 500px;
+    
+}
+
+header div{
+display:flex ;
+gap: 10px;
+}
+
+header div button{
+    padding : 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header div button:nth-child(1){
+    background-color: black;
+}
+header div button:nth-child(2){
+    background-color: blue;
+}
+header div button:nth-child(3){
+    background-color: red;
+}
+.category-wrapper {
+   padding: 30px;
+}
+
+.categories{
+   display: flex; 
+   margin-top: 40px;
+  justify-content: space-between;
+  gap: 40px;
+}
+.category{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    
+
+}
+.category img{
+    width: 100%;
+    border-radius: 10px;
+}
+.category span{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* ÜRÜNLER */
+
+.product-wrapper{
+   
+    padding: 30px;
+}
+
+.products{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 90px;
+ margin-top: 30px;
+
+}
+
+.product{
+ max-width: 250px; 
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+.product img{
+width: 100%;
+border-radius: 10px;
+}
+
+.product-title{
+    text-align: center;
+}
+
+.product-category{
+    text-align: center;
+}
+
+.product-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+   border-radius: 10px;
+}
+.product-action button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.911);
+    color: white;
+    transition:background-color 0.4s;
+}
+.product-action button:hover{
+    background-color: chocolate;
+    transition: 0.4s all;
+}
+
+/* MODAL  */
+
+#modal-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.096);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none;
+     place-items: center;   /* d: grid yapısında align-items ve jusfy-content i kapsar*/
+     z-index: 1000;
+}
+#modal{
+    width: 50vw;
+    height: 60vh;
+   display: grid;
+    background-color: white;
+    border-radius: 10px;
+  overflow-y: scroll;
+   
+}
+
+.active{
+    display: grid !important;
+}
+
+.modal-list{
+ display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 30px;
+   
+}
+
+.list-item{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;;
+    padding: 10px;
+}
+
+.list-item img{
+    width: 65px;
+    border-radius: 5px;
+}
+
